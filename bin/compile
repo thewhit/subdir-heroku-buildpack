@@ -20,7 +20,7 @@ if [ -f $ENV_DIR/PROJECT_PATH ]; then
 		echo "       recreating $BUILD_DIR"
 		mkdir -p $BUILD_DIR
 		echo "       copying preserved work dir from cache $TMP_DIR to build dir $BUILD_DIR"
-		mv $TMP_DIR $BUILD_DIR
+		mv $TMP_DIR/ $BUILD_DIR/
 		exit 0
 	fi
 fi
